@@ -1,7 +1,7 @@
 Write-Host -ForegroundColor Green "Starting Upward OSDCloud ZTI - QHL"
 Start-Sleep -Seconds 5
 
-Start-OSDCloud -OSVersion 'Windows 11' -OSEdition Pro -OSLanguage "en-us" -OSLicense Retail -ZTI 
+Start-OSDCloud -OSVersion 'Windows 11 24H2 x64' -OSEdition Pro -OSLanguage "en-us" -OSLicense Retail -ZTI 
 #-Brand 'Upward - QHL'
 
 # 1. Set sleep settings to 'Never' when plugged in
