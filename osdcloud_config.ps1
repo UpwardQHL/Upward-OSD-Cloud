@@ -14,7 +14,7 @@ powercfg -change -monitor-timeout-ac 0
 #(New-Object System.Net.WebClient).DownloadFile("https://zinfandel.rmm.datto.com/download-agent/windows/2d46424b-3d1a-4182-8180-a850f3bc0c23", "$env:TEMP/AgentInstall.exe");start-process "$env:TEMP/AgentInstall.exe"
 #Restart from WinPE
 
-Write-Host -ForegroundColor Green “Restarting in 20 seconds!”
+Write-Host -ForegroundColor Green “Restarting in 10 seconds!”
 
 Start-Sleep -Seconds 10
 
