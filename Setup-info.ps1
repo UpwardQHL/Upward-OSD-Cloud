@@ -8,10 +8,12 @@ New-OSDCloudTemplate
  
 New-OSDCloudWorkspace -WorkspacePath C:\OSDCloud
  
-New-OSDCloudUSB
- 
-Edit-OSDCloudwinPE -workspacepath C:\OSDCloud -CloudDriver * -WebPSScript https://raw.githubusercontent.com/UpwardQHL/Upward-OSD-Cloud/refs/heads/main/osdcloud_config.ps1 -Verbose
- 
+
+Edit-OSDCloudwinPE -workspacepath C:\OSDCloud -CloudDriver * -StartURL https://raw.githubusercontent.com/UpwardQHL/Upward-OSD-Cloud/refs/heads/main/osdcloud_config.ps1 -Verbose
+New-OSDCloudWorkSpaceSetupCompleteTemplate
+#Edit the template file, insert the auto attend
+
 New-OSDCloudISO
- 
+New-OSDCloudUSB
+
 Update-OSDCloudUSB
